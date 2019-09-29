@@ -8,6 +8,9 @@
   #first{
     margin-left: auto;
   }
+  #clickme{
+    display: none;
+  }
   #cover{
     z-index: -1;
     top: 0;
@@ -33,10 +36,17 @@
   }
   .navbar > a {
     text-decoration: none;
-    color: white;
+    color: black;
+  }
+  .options:hover{
+    background-color: grey;
   }
   .nav{
-    background-color: black;
+    background-color: rgba(0,0,0, 0.1);
+    /* border-bottom:1px solid; */
+    position: fixed;
+    width: 100%;
+    z-index: 2;
   }
 .classylook{
   height: auto;
@@ -57,6 +67,7 @@
   margin-left: 50%;
   font-size: 80px;
   color: black;
+  opacity: 0.7;
 }
 .shop{
   background-color: rgb(207,160,114);
@@ -75,9 +86,9 @@
   } */
 }
 @media only screen and (max-width:1010px){
-  #first{
+  /* #first{
     margin-left: auto;
-  }
+  } */
   #cover{
     z-index: -1;
     top: 0;
@@ -90,25 +101,79 @@
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
-
   }
   #name >i{
     font-size: 60px;
+  }
+  #shopdrop{
+    height: 300px;
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(207,160,114,0.7);
+    height: 100vh;
   }
   .name{
     background-image: url("../images/pic1.png");
     background-repeat: no-repeat;
     height: 100vh;
     background-color: rgb(207,160,114);
+    background-attachment: fixed;
   }
   .navbar > a {
     text-decoration: none;
-    color: white;
+    color: black;
+    padding-left: 40%;
+  }
+  .options{
+    display: none;
+  }
+  .options:hover{
+    background-color: grey;
   }
   .nav{
-    background-color: black;
-  }
-  /* body{
     background-color: rgb(207,160,114);
-  } */
+    /* border-bottom:1px solid; */
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 1px 1px 3px black;
+  }
+.classylook{
+  height: auto;
+}
+.pos{
+  margin-left: auto;
+}
+.text{
+  position: absolute;
+  align-self: center;
+  margin-left: 30%;
+  font-size: 30px;
+  color: #cfa072;
+}
+.text2{
+  position: absolute;
+  align-self: flex-end;
+  margin-left: 50%;
+  font-size: 30px;
+  color: black;
+  opacity: 0.7;
+}
+.shop{
+  background-color: rgb(207,160,114);
+  border-radius: 1000px 1000px 0px 50px;
+}
+.footer{
+  background-color: rgba(0,0,4,0.8);
+}
+.footercontent{
+  color: white;
+  font-size: 15px;
+  margin-top: 0;
+}
 }
